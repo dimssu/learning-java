@@ -4,10 +4,10 @@ public class SelectionSort {
     public static void main(String[] args){
         int[] array = {6,3,5,2,7,9};
 
-        for (int i = 0; i<array.length; i++){
+        for (int i = 0; i<array.length-1; i++){
             int small = array[i];
             int minIndex = i;
-            for (int j = i; j<array.length; j++){
+            for (int j = i+1; j<array.length; j++){
                 if (array[j]<small){
                     small = array[j];
                     minIndex = j;
